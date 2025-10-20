@@ -1,0 +1,57 @@
+.navlink {
+    border: none;
+    border-radius: 0.75rem;
+    transition: background .2s ease, color .2s ease, opacity .2s ease;
+    outline: none;
+}
+
+.navlink:hover {
+    background: rgba(124, 58, 237, .12);
+    color: #0f172a;
+}
+
+.navlink:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navlink.active {
+    background: linear-gradient(135deg, var(--cc-primary), var(--cc-secondary));
+    color: #ffffff;
+}
+
+.navbar.on-hero .navlink {
+    color: #f8fafc;
+}
+
+.navbar.on-hero .navlink:hover {
+    background: rgba(255, 255, 255, .14);
+    color: #ffffff;
+}
+
+.navbar.on-hero .navlink:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar .brand-name {
+    background: linear-gradient(90deg, #111827, #4c1d95 35%, #0ea5e9 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.navbar.on-hero .brand-name {
+    background: linear-gradient(90deg, #ffffff, #c7d2fe 40%, #a5b4fc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#menuBtn {
+    background: rgba(150, 150, 150, 0.22);
+    border-color: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}

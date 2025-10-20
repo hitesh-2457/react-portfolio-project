@@ -1,0 +1,134 @@
+/* Experience section styles */
+
+.title-gradient-light {
+  background: linear-gradient(135deg, #1e293b, #334155);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.chip {
+  background: rgba(124, 58, 237, 0.1);
+  color: #7c3aed;
+  border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+.vline {
+  background: #7c3aed;
+  width: 2px;
+}
+
+.marker {
+  width: 32px;
+  height: 32px;
+  background: white;
+  border: 2px solid #7c3aed;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.t-card {
+  background: #f8fafc;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.t-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.t-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.g1 { background: linear-gradient(90deg, #7c3aed, #a855f7); }
+.g2 { background: linear-gradient(90deg, #3b82f6, #06b6d4); }
+.g3 { background: linear-gradient(90deg, #10b981, #34d399); }
+.g4 { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+.g5 { background: linear-gradient(90deg, #ef4444, #f87171); }
+.g6 { background: linear-gradient(90deg, #8b5cf6, #c084fc); }
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  #experience article {
+    padding-left: 1.75rem;
+  }
+  #experience .vline {
+    left: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #experience .vline {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.timeline-container { 
+  position: relative; 
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;                    /* Center the line */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, 
+    rgba(124,58,237,0.3),       /* Purple fade in */
+    rgba(37,99,235,0.5) 50%,    /* Blue in middle */
+    rgba(124,58,237,0.3)        /* Purple fade out */
+  );
+  transform: translateX(-50%);   /* Perfect centering */
+}
+
+
+
+.timeline-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);           /* Strong glassmorphism */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top accent bar */
+.timeline-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+  border-radius: 20px 20px 0 0;
+}
+
+.timeline-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  border-color: rgba(124, 58, 237, 0.3);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}

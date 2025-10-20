@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Principal Member of Technical Staff",
+    "company": "Oracle America Inc.",
+    "period": "Oct 2025 – Present",
+    "marker": "💼",
+    "category": "work"
+  },
+  {
+    "id": 2,
+    "title": "Inventor - Patent Filed",
+    "company": "Oracle America Inc. - Identity Domain Snapshot Consumption using Versioning",
+    "period": "Jun 2024",
+    "marker": "💡",
+    "category": "patent"
+  },
+  {
+    "id": 3,
+    "title": "Senior Member of Technical Staff",
+    "company": "Oracle America Inc.",
+    "period": "Aug 2021 – Sep 2025",
+    "marker": "💼",
+    "category": "work"
+  },
+  {
+    "id": 4,
+    "title": "Member of Technical Staff",
+    "company": "Oracle America Inc.",
+    "period": "Jan 2020 – Aug 2021",
+    "marker": "💼",
+    "category": "work"
+  },
+  {
+    "id": 5,
+    "title": "M.S. in Computer Science",
+    "company": "UT Dallas",
+    "period": "Aug 2017 – Dec 2019 • GPA: 3.88",
+    "marker": "🎓",
+    "category": "education"
+  },
+  {
+    "id": 6,
+    "title": "Software Engineer Intern",
+    "company": "Nvidia Corporation",
+    "period": "Jan 2019 – Mar 2019",
+    "marker": "🧪",
+    "category": "work"
+  },
+  {
+    "id": 7,
+    "title": "Software Engineer Intern",
+    "company": "Mavenir Systems Inc.",
+    "period": "May 2018 – Aug 2018",
+    "marker": "🧪",
+    "category": "work"
+  },
+  {
+    "id": 8,
+    "title": "Software Engineer",
+    "company": "ShoreTel Communications",
+    "period": "Apr 2015 – Jul 2017",
+    "marker": "🏢",
+    "category": "work"
+  },
+  {
+    "id": 9,
+    "title": "B.E. in Electronics & Communications",
+    "company": "MSRIT",
+    "period": "Sep 2011 – Jul 2015 • GPA: 3.54",
+    "marker": "🎓",
+    "category": "education"
+  }
+]

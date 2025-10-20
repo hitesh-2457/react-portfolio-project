@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Programming Languages",
+    "items": ["Java", "C#", "Python", "Scala"]
+  },
+  {
+    "id": 2,
+    "title": "Databases",
+    "items": ["MYSQL", "MSSQL", "Berkeley DB (Key-Value store)"]
+  },
+  {
+    "id": 3,
+    "title": "Cloud & Infra",
+    "items": ["AWS", "Docker", "Puppet", "Ansible", "OCI"]
+  },
+  {
+    "id": 4,
+    "title": "Bigdata & Streaming",
+    "items": ["Spark", "Kafka", "ELK Stack"]
+  }
+]
