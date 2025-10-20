@@ -46,7 +46,7 @@ const Home: React.FC = () => {
     <section id="home" className="min-h-screen flex items-center justify-center text-white relative" data-hero>
         <div className="max-w-6xl w-full mx-auto px-6 relative z-10 pt-24 sm:pt-28 allow-free-scroll">
           <div className="bg-white/10 backdrop-blur-md rounded-3xl shadow-2xl border border-white/20 p-8 transform hover:scale-105 transition-transform duration-300">
-            <div className="grid lg:grid-cols-3 gap-8 items-center">
+            <div className="grid lg:grid-cols-3 items-center">
               <div className="lg:col-span-2 flex flex-col justify-between h-full">
                 <div className="text-center flex-1">
                   <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
@@ -56,13 +56,23 @@ const Home: React.FC = () => {
                     <span id="roleText">{displayedRole}</span>
                     <span className="typing-cursor" aria-hidden="true">|</span>
                   </p>
-                  <p className="mt-8 text-white/90 text-base sm:text-lg max-w-2xl mx-auto">
+                  <div className="mt-8 text-white/90 text-base sm:text-lg max-w-2xl mx-auto space-y-4">
                     {loading ? (
-                      'Loading...'
+                      <p className="text-center">Loading...</p>
                     ) : (
-                      `${currentRole?.title || 'Software Engineer'} at ${currentRole?.company || 'Tech Company'}, architecting robust DevOps solutions and driving cloud platform modernization. With ${yearsExperience}+ years transforming complex distributed systems into scalable, enterprise-grade applications, I'm a passionate tech, AI, and ML enthusiast committed to innovative solutions.`
+                      <>
+                        <p className="leading-relaxed">
+                          <span className="font-semibold text-white">"{currentRole?.title || 'Software Engineer'}"</span> at{' '}
+                          <span className="font-semibold text-white">"{currentRole?.company || 'Tech Company'}"</span>,{' '}
+                          architecting robust DevOps solutions and driving cloud platform modernization.
+                        </p>
+                        <p className="leading-relaxed">
+                          With <span className="font-bold text-white text-lg">{yearsExperience}+ years</span> transforming complex distributed systems into scalable, enterprise-grade applications, I'm a passionate{' '}
+                          <span className="font-semibold text-white">Tech, AI, and ML enthusiast</span> committed to innovative solutions.
+                        </p>
+                      </>
                     )}
-                  </p>
+                  </div>
                 </div>
               </div>
               <div className="flex justify-center lg:justify-end">

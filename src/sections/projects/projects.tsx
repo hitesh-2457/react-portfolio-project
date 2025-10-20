@@ -146,7 +146,7 @@ function Projects() {
       <div className="max-w-6xl mx-auto px-6 allow-free-scroll">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-extrabold title-gradient-light">Featured Projects</h2>
-          <p className="mt-3 text-slate-600">Latest repositories pulled live from GitHub.</p>
+          <p className="mt-3 text-slate-600">Latest repositories sourced with GitHub APIs.</p>
         </div>
         {loading && (
           <div id="projects-loading" className="text-center py-10">

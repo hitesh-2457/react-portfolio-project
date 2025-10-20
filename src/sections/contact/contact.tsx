@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
         </div>
       </div>
       <p className="mt-12 text-center text-slate-500 text-sm">
-        © 2025 Hitesh Gupta T R. All rights reserved.
+        Designed & Built by Hitesh Gupta T R. Hosted on AWS Amplify.
       </p>
     </div>
   </section>
